@@ -2,6 +2,7 @@ export interface IUI{
     counter: number;
     loggedIn: boolean;
     waitingForResponse:boolean;
+    errorMessage: string;
 }
 
 export interface IAssetData {
@@ -33,7 +34,8 @@ export const initial:IState = {
 	UI: {
 		counter: 0,
 		loggedIn: false,
-		waitingForResponse: false,
+        waitingForResponse: false,
+        errorMessage: ""
 	},
 	BM: {
         user: {
